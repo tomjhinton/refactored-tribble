@@ -39,6 +39,7 @@ module.exports = {
       inject: 'body'
 
     }),
+    new webpack.ProvidePlugin({ 'window.decomp': 'poly-decomp' }),
     new CopyWebpackPlugin([
       { from: 'src/images', to: 'images' }
     ])
